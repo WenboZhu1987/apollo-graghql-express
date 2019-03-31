@@ -1,0 +1,14 @@
+type Query {
+  login(loginInput: LoginInput!): AuthInfo!
+}
+
+type AuthInfo {
+  sub: ID!
+  email: String!
+  token: String!
+}
+
+input LoginInput {
+  email: String!
+  password: String!
+}
