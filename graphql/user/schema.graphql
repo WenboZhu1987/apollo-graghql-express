@@ -1,0 +1,34 @@
+# import Error from "../shared/schema.graphql"
+
+type Query {
+  getUsers: [User!]
+  getUser(id: ID!): User
+}
+
+type Mutation {
+  createUser(userInput: CreateUserInput!): [Error!]
+  updateUser(id: ID!, userInput: UpdateUserInput!): [Error!]
+  deleteUser(id: ID!): [Error!]
+}
+
+type User {
+  _id: ID!
+  name: String!
+  email: String!
+  role: String!
+  password: String!
+}
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  role: String!
+  password: String!
+}
+
+input UpdateUserInput {
+  name: String
+  email: String
+  role: String
+  password: String
+}

@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "apollo-server-express": "^2.4.8",
+    "bcryptjs": "^2.4.3",
     "bluebird": "^3.5.3",
     "body-parser": "^1.18.3",
     "dotenv": "^7.0.0",

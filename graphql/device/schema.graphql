@@ -1,7 +1,6 @@
 # import Error from "../shared/schema.graphql"
 
 type Query {
-  hello: String
   getDevices: [Device!]
   getDevice(id: ID!): Device
 }
