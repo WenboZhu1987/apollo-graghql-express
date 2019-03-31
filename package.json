@@ -1,0 +1,25 @@
+{
+  "name": "apollo-server-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.4.8",
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "graphql": "^14.2.0",
+    "graphql-tools": "^4.0.4",
+    "mongoose": "^5.4.20",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
