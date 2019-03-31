@@ -8,7 +8,7 @@ const {
 const deviceCheckSchema = require('../../yup/deviceCheckSchema')
 const formatYupError = require('../../utils/formatYupError')
 
-const resolver = {
+const resolvers = {
   Query: {
     getDevices: async () => {
       const devices = await getDevices()
@@ -21,6 +21,7 @@ const resolver = {
   },
   Mutation: {
     createDevice: async (_, args) => {
+      console.log('createDevice', args)
       try {
         await deviceCheckSchema('createDevice').validate(args.deviceInput, {
           abortEarly: false
@@ -51,4 +52,6 @@ const resolver = {
   }
 }
 
-module.exports = resolver
+module.exports = {
+  resolvers
+}

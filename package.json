@@ -1,5 +1,5 @@
 {
-  "name": "apollo-server-express",
+  "name": "apollo-graphql-express",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "start": "nodemon app.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "apollo-server-express": "^2.4.8",
     "bluebird": "^3.5.3",
@@ -15,6 +15,7 @@
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "graphql": "^14.2.0",
+    "graphql-import": "^0.7.1",
     "graphql-tools": "^4.0.4",
     "mongoose": "^5.4.20",
     "yup": "^0.27.0"
