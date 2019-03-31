@@ -21,7 +21,6 @@ const resolvers = {
   },
   Mutation: {
     createDevice: async (_, args) => {
-      console.log('createDevice', args)
       try {
         await deviceCheckSchema('createDevice').validate(args.deviceInput, {
           abortEarly: false

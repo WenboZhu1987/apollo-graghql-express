@@ -10,6 +10,8 @@ const schemas = []
 const folders = fs.readdirSync(path.join(__dirname, './graphql'))
 // import all subschemas from src/modules folder
 folders.forEach(folder => {
+  // DO NOT import modules/shared folder
+  if (folder.indexOf('shared') != -1) return
   const { resolvers } = require(`./graphql/${folder}/resolvers`)
   const typeDefs = importSchema(
     path.join(__dirname, `./graphql/${folder}/schema.graphql`)

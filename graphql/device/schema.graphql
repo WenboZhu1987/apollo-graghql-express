@@ -1,3 +1,5 @@
+# import Error from "../shared/schema.graphql"
+
 type Query {
   hello: String
   getDevices: [Device!]
@@ -24,11 +26,6 @@ type Device {
   deviceNumberAddr: String!
   modifiedBy: String!
   userID: String!
-}
-
-type Error {
-  path: String!
-  message: String!
 }
 
 input DeviceInput {
